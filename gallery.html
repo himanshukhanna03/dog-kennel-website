@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f6f5ef">
+	<meta name="description" content="Photos and videos from life with the dogs at Kyra Kennels.">
+	<title>Gallery | Kyra Kennels</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="Kyra Kennels home"><span class="brand-mark" aria-hidden="true">K</span><span class="brand-name">Kyra <span>Kennels</span></span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span><span></span></button>
+		<nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+			<a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html" aria-current="page">Gallery</a><a href="breeds.html">Breeds</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+			<a class="nav-cta" href="contact.html#booking">Make an enquiry <span aria-hidden="true">&rarr;</span></a>
+		</nav>
+	</header>
+	<main id="main">
+		<header class="page-banner section-wrap">
+			<p class="eyebrow">A peek at kennel life</p>
+			<h1>Out and about, <em>being dogs.</em></h1>
+			<p>Browse the photographs and videos capturing the dogs, their personalities, and everyday life at Kyra Kennels.</p>
+		</header>
+		<section class="gallery section-wrap" id="gallery" aria-label="Kennel photo and video gallery">
+			<div class="section-heading gallery-heading">
+				<div><p class="eyebrow">Photos and videos</p><h2>Meet the dogs.</h2></div>
+				<div class="gallery-filters" role="group" aria-label="Filter gallery media">
+					<button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+					<button class="filter-button" type="button" data-filter="photo" aria-pressed="false">Photos</button>
+					<button class="filter-button" type="button" data-filter="video" aria-pressed="false">Videos</button>
+				</div>
+			</div>
+			<div class="gallery-grid" id="gallery-grid" aria-live="polite" aria-busy="true"></div>
+			<button class="button button-outline gallery-more" id="gallery-more" type="button">Show more <span aria-hidden="true">&darr;</span></button>
+			<dialog class="media-dialog" id="media-dialog" aria-labelledby="media-dialog-title">
+				<div class="media-dialog-bar"><p id="media-dialog-title">Gallery</p><button class="media-dialog-close" id="media-dialog-close" type="button" aria-label="Close media viewer">&times;</button></div>
+				<div class="media-dialog-content" id="media-dialog-content"></div>
+				<div class="media-dialog-controls"><button class="viewer-control" id="media-previous" type="button">&larr; Previous</button><span id="media-counter" aria-live="polite"></span><button class="viewer-control" id="media-next" type="button">Next &rarr;</button></div>
+			</dialog>
+			<noscript><p class="noscript-note">Turn on JavaScript to browse the kennel photo and video gallery.</p></noscript>
+		</section>
+	</main>
+	<footer class="site-footer">
+		<div class="section-wrap footer-main">
+			<a class="brand footer-brand" href="index.html" aria-label="Kyra Kennels home"><span class="brand-mark" aria-hidden="true">K</span><span class="brand-name">Kyra <span>Kennels</span></span></a>
+			<p class="footer-note">Good care. Good company.<br>Good dogs, all around.</p>
+			<div class="footer-contact"><p class="footer-label">Booking enquiries</p><a href="contact.html#booking">Tell us about your dog's stay</a><span>Our team will follow up with availability.</span></div>
+			<a class="footer-top" href="index.html#home">Back to top <span aria-hidden="true">&uarr;</span></a>
+		</div>
+		<div class="section-wrap footer-bottom"><span>&copy; <span id="current-year"></span> Kyra Kennels</span><span>Made with care, for dogs and their people.</span></div>
+	</footer>
+</body>
+</html>

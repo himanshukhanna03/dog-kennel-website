@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f6f5ef">
+	<meta name="description" content="Send a booking enquiry to Kyra Kennels about boarding, daycare, or grooming.">
+	<title>Contact | Kyra Kennels</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="Kyra Kennels home"><span class="brand-mark" aria-hidden="true">K</span><span class="brand-name">Kyra <span>Kennels</span></span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span><span></span></button>
+		<nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+			<a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="breeds.html">Breeds</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a>
+			<a class="nav-cta" href="#booking">Make an enquiry <span aria-hidden="true">&rarr;</span></a>
+		</nav>
+	</header>
+	<main id="main">
+		<header class="page-banner section-wrap">
+			<p class="eyebrow">Let's make a plan</p>
+			<h1>Tell us about <em>your good dog.</em></h1>
+			<p>Share a few details and our team can follow up about availability and the kind of care you're looking for.</p>
+		</header>
+		<section class="booking section-wrap" id="booking" aria-labelledby="booking-title">
+			<div class="booking-copy">
+				<p class="eyebrow">Booking enquiry</p>
+				<h2 id="booking-title">A good stay starts with a conversation.</h2>
+				<p>Let us know a little about you, your dog, and the dates you're considering. We'll be in touch to discuss your enquiry.</p>
+			</div>
+			<form class="booking-form" id="booking-form">
+				<div class="form-row">
+					<div class="form-field"><label for="owner-name">Your name</label><input id="owner-name" name="ownerName" type="text" autocomplete="name" required></div>
+					<div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+				</div>
+				<div class="form-row">
+					<div class="form-field"><label for="dog-name">Dog's name</label><input id="dog-name" name="dogName" type="text" required></div>
+					<div class="form-field"><label for="service">What do you have in mind?</label><select id="service" name="service" required><option value="" disabled selected>Choose a service</option><option value="boarding">Overnight boarding</option><option value="daycare">Daycare</option><option value="grooming">Grooming</option></select></div>
+				</div>
+				<div class="form-row">
+					<div class="form-field"><label for="start-date">First day</label><input id="start-date" name="startDate" type="date" required></div>
+					<div class="form-field"><label for="end-date">Last day <span>(if applicable)</span></label><input id="end-date" name="endDate" type="date"></div>
+				</div>
+				<div class="form-field"><label for="message">Anything else we should know? <span>(optional)</span></label><textarea id="message" name="message" rows="3" placeholder="A little about your dog's routine, needs, or favourite things..."></textarea></div>
+				<div class="form-submit-row"><button class="button button-primary" type="submit">Send an enquiry <span aria-hidden="true">&rarr;</span></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></div>
+			</form>
+		</section>
+	</main>
+	<footer class="site-footer">
+		<div class="section-wrap footer-main">
+			<a class="brand footer-brand" href="index.html" aria-label="Kyra Kennels home"><span class="brand-mark" aria-hidden="true">K</span><span class="brand-name">Kyra <span>Kennels</span></span></a>
+			<p class="footer-note">Good care. Good company.<br>Good dogs, all around.</p>
+			<div class="footer-contact"><p class="footer-label">Booking enquiries</p><a href="#booking">Tell us about your dog's stay</a><span>Our team will follow up with availability.</span></div>
+			<a class="footer-top" href="index.html#home">Back to top <span aria-hidden="true">&uarr;</span></a>
+		</div>
+		<div class="section-wrap footer-bottom"><span>&copy; <span id="current-year"></span> Kyra Kennels</span><span>Made with care, for dogs and their people.</span></div>
+	</footer>
+</body>
+</html>
